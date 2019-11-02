@@ -23,6 +23,7 @@
     "request-promise": "^4.2.4"
   },
   "devDependencies": {
+    "@typescript-eslint/parser": "^2.6.0",
     "eslint": "^6.6.0",
     "prettier": "^1.18.2",
     "typescript": "^3.6.4"
