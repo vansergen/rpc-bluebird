@@ -1,7 +1,5 @@
 # rpc-bluebird
 
-A simple wrapper of the request-promise library in a class
-
 `rpc-bluebird` is a simple wrapper of the [`request-promise`](https://github.com/request/request-promise) library in a class.
 
 ## Installation
