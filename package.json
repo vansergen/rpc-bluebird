@@ -3,6 +3,14 @@
   "version": "1.0.0",
   "description": "Simple wrapper of the request-promise in a class",
   "main": "index.js",
+  "scripts": {
+    "prettier": "prettier -c **/*.{js,md,ts,json}",
+    "prettier-write": "npm run prettier -- --write",
+    "build": "tsc",
+    "lint": "eslint --ext .ts,.js ./",
+    "lint-fix": "npm run lint -- --fix",
+    "prepublishOnly": "npm run prettier && npm run lint && npm run build && npm run prettier-write && npm run lint-fix"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vansergen/rpc-bluebird.git"
