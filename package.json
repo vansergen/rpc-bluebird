@@ -1,6 +1,6 @@
 {
   "name": "rpc-bluebird",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple wrapper of the request-promise in a class",
   "main": "index.js",
   "type": "module",
