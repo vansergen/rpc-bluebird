@@ -2,9 +2,9 @@
   "name": "rpc-bluebird",
   "version": "1.0.4",
   "description": "Simple wrapper of the request-promise in a class",
-  "main": "index.js",
+  "main": "build/index.js",
   "type": "commonjs",
-  "types": "index.d.ts",
+  "types": "build/index.d.ts",
   "scripts": {
     "prettier": "prettier -c **/*.{js,md,ts,json}",
     "prettier-write": "npm run prettier -- --write",
