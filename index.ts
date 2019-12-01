@@ -1,44 +1,44 @@
 import * as request from "request-promise";
 import { Cookie, CookieJar } from "request";
 
-export type RPCOtpions = request.RequestPromiseOptions | request.Options;
+export type RPCOptions = request.RequestPromiseOptions | request.Options;
 
 export class RPC {
-  _rpoptions: RPCOtpions;
+  _rpoptions: RPCOptions;
 
-  constructor(options: RPCOtpions = {}) {
+  constructor(options: RPCOptions = {}) {
     this._rpoptions = options;
   }
 
-  get(options: RPCOtpions = {}): request.RequestPromise<any> {
+  get(options: RPCOptions = {}): request.RequestPromise<any> {
     return this.request({ ...options, method: "GET" });
   }
 
-  post(options: RPCOtpions = {}): request.RequestPromise<any> {
+  post(options: RPCOptions = {}): request.RequestPromise<any> {
     return this.request({ ...options, method: "POST" });
   }
 
-  put(options: RPCOtpions = {}): request.RequestPromise<any> {
+  put(options: RPCOptions = {}): request.RequestPromise<any> {
     return this.request({ ...options, method: "PUT" });
   }
 
-  patch(options: RPCOtpions = {}): request.RequestPromise<any> {
+  patch(options: RPCOptions = {}): request.RequestPromise<any> {
     return this.request({ ...options, method: "PATCH" });
   }
 
-  delete(options: RPCOtpions = {}): request.RequestPromise<any> {
+  delete(options: RPCOptions = {}): request.RequestPromise<any> {
     return this.request({ ...options, method: "DELETE" });
   }
 
-  head(options: RPCOtpions = {}): request.RequestPromise<any> {
+  head(options: RPCOptions = {}): request.RequestPromise<any> {
     return this.request({ ...options, method: "HEAD" });
   }
 
-  options(options: RPCOtpions = {}): request.RequestPromise<any> {
+  options(options: RPCOptions = {}): request.RequestPromise<any> {
     return this.request({ ...options, method: "OPTIONS" });
   }
 
-  request(options: RPCOtpions = {}): request.RequestPromise<any> {
+  request(options: RPCOptions = {}): request.RequestPromise<any> {
     return this.defaults(RPC.prepareOptions(options, this._rpoptions));
   }
 
@@ -63,8 +63,8 @@ export class RPC {
   }
 
   static prepareOptions(
-    options: RPCOtpions,
-    rpoptions: RPCOtpions
+    options: RPCOptions,
+    rpoptions: RPCOptions
   ): request.Options {
     if (!("url" in options || "uri" in options)) {
       if (!("url" in rpoptions || "uri" in rpoptions)) {
