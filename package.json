@@ -1,6 +1,6 @@
 {
   "name": "rpc-bluebird",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Simple wrapper of the request-promise in a class",
   "main": "build/index.js",
   "type": "commonjs",
@@ -38,11 +38,11 @@
     "request-promise": "^4.2.5"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.9.0",
-    "@typescript-eslint/parser": "^2.9.0",
+    "@typescript-eslint/eslint-plugin": "^2.12.0",
+    "@typescript-eslint/parser": "^2.12.0",
     "eslint": "^6.7.2",
     "prettier": "^1.19.1",
-    "typescript": "^3.7.2"
+    "typescript": "^3.7.3"
   },
   "funding": {
     "type": "Coinbase Commerce",
