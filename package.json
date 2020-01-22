@@ -8,6 +8,7 @@
   "scripts": {
     "prettier": "prettier -c \"**/*.{js,md,ts,json}\"",
     "prettier-write": "npm run prettier -- --write",
+    "fresh-install": "rm -fr node_modules && rm -f package-lock.json && npm install",
     "build": "tsc",
     "lint": "eslint --ext .ts,.js ./",
     "lint-fix": "npm run lint -- --fix",
