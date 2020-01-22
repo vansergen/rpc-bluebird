@@ -11,7 +11,7 @@ export class RPC {
     this._rpoptions = options;
   }
 
-  get(options: RPCOptions = {}): Promise<any> {
+  get(options: RPCOptions = {}): Bluebird<any> {
     return this.request({ ...options, method: "GET" });
   }
 
