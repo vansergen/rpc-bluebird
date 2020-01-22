@@ -1,5 +1,6 @@
 import * as request from "request-promise";
 import { Cookie, CookieJar } from "request";
+import * as Bluebird from "bluebird";
 
 export type RPCOptions = request.RequestPromiseOptions | request.Options;
 
@@ -10,36 +11,38 @@ export class RPC {
     this._rpoptions = options;
   }
 
-  get(options: RPCOptions = {}): request.RequestPromise<any> {
+  get(options: RPCOptions = {}): Promise<any> {
     return this.request({ ...options, method: "GET" });
   }
 
-  post(options: RPCOptions = {}): request.RequestPromise<any> {
+  post(options: RPCOptions = {}): Bluebird<any> {
     return this.request({ ...options, method: "POST" });
   }
 
-  put(options: RPCOptions = {}): request.RequestPromise<any> {
+  put(options: RPCOptions = {}): Bluebird<any> {
     return this.request({ ...options, method: "PUT" });
   }
 
-  patch(options: RPCOptions = {}): request.RequestPromise<any> {
+  patch(options: RPCOptions = {}): Bluebird<any> {
     return this.request({ ...options, method: "PATCH" });
   }
 
-  delete(options: RPCOptions = {}): request.RequestPromise<any> {
+  delete(options: RPCOptions = {}): Bluebird<any> {
     return this.request({ ...options, method: "DELETE" });
   }
 
-  head(options: RPCOptions = {}): request.RequestPromise<any> {
+  head(options: RPCOptions = {}): Bluebird<any> {
     return this.request({ ...options, method: "HEAD" });
   }
 
-  options(options: RPCOptions = {}): request.RequestPromise<any> {
+  options(options: RPCOptions = {}): Bluebird<any> {
     return this.request({ ...options, method: "OPTIONS" });
   }
 
-  request(options: RPCOptions = {}): request.RequestPromise<any> {
-    return this.defaults(RPC.prepareOptions(options, this._rpoptions));
+  request(options: RPCOptions = {}): Bluebird<any> {
+    return this.defaults(
+      RPC.prepareOptions(options, this._rpoptions)
+    ).promise();
   }
 
   /**
