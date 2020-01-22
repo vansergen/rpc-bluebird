@@ -10,6 +10,7 @@
     "prettier-write": "npm run prettier -- --write",
     "fresh-install": "rm -fr node_modules && rm -f package-lock.json && npm install",
     "build": "tsc",
+    "test": "mocha -r ts-node/register --full-trace --ui tdd --bail test/*.spec.ts",
     "lint": "eslint --ext .ts,.js ./",
     "lint-fix": "npm run lint -- --fix",
     "prepublishOnly": "npm run prettier && npm run lint && npm run build && npm run prettier-write && npm run lint-fix",
@@ -69,5 +70,8 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "directories": {
+    "test": "test"
   }
 }
