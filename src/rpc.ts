@@ -4,7 +4,7 @@ import { Cookie, CookieJar } from "request";
 export type RPCOptions = request.RequestPromiseOptions | request.Options;
 
 export class RPC {
-  _rpoptions: RPCOptions;
+  readonly _rpoptions: RPCOptions;
 
   constructor(options: RPCOptions = {}) {
     this._rpoptions = options;
