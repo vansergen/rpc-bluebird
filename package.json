@@ -37,7 +37,7 @@
   "homepage": "https://github.com/vansergen/rpc-bluebird#readme",
   "dependencies": {
     "@types/request-promise": "^4.1.46",
-    "request": "^2.88.0",
+    "request": "^2.88.2",
     "request-promise": "^4.2.5"
   },
   "devDependencies": {
