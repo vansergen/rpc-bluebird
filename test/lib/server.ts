@@ -1,4 +1,4 @@
-import * as http from "http";
+import http from "http";
 
 export const server = http.createServer((request, response) => {
   const { url, method } = request;

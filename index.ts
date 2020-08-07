@@ -1,1 +1,1 @@
-export * from "./src/rpc";
+export * from "./src/rpc.js";

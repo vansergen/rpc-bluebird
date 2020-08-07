@@ -1,6 +1,6 @@
-import * as request from "request-promise";
+import request from "request-promise";
 import { Cookie, CookieJar } from "request";
-import * as Bluebird from "bluebird";
+import Bluebird from "bluebird";
 
 export type RPCOptions = request.RequestPromiseOptions | request.Options;
 

@@ -1,6 +1,6 @@
-import * as assert from "assert";
-import { RPC } from "../index";
-import { server } from "./lib/server";
+import assert from "assert";
+import { RPC } from "../index.js";
+import { server } from "./lib/server.js";
 
 const result = "ok";
 const port = 15474;
@@ -8,7 +8,7 @@ const baseUrl = "http://localhost:" + port;
 const options = { json: true, baseUrl };
 
 suite("RPC", () => {
-  suiteSetup(done => server.listen(port, done));
+  suiteSetup((done) => server.listen(port, done));
 
   test("constructor", () => {
     const client = new RPC(options);
@@ -118,12 +118,12 @@ suite("RPC", () => {
     assert.deepStrictEqual(request, { result });
   });
 
-  test(".request() (rejected promise)", done => {
+  test(".request() (rejected promise)", (done) => {
     const client = new RPC({ url: "get", ...options });
     client
       .request({ method: "POST" })
       .then(() => assert.fail("Should reject the promise"))
-      .catch(error => {
+      .catch((error) => {
         assert.deepStrictEqual(error.message, "404 - undefined");
         done();
       });
@@ -190,5 +190,5 @@ suite("RPC", () => {
     });
   });
 
-  suiteTeardown(done => server.close(done));
+  suiteTeardown((done) => server.close(done));
 });
