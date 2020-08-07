@@ -6,14 +6,13 @@
     "outDir": "./build",
     "newLine": "lf",
     "strict": true,
-    "noImplicitAny": true,
-    "noImplicitThis": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "removeComments": true,
-    "forceConsistentCasingInFileNames": true
-  },
-  "exclude": ["test"]
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true
+  }
 }

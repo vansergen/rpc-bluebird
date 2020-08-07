@@ -6,7 +6,7 @@
   "type": "commonjs",
   "types": "./build/index.d.ts",
   "scripts": {
-    "build": "npm run clean && tsc && tsc -p tsconfig_esm.json",
+    "build": "npm run clean && tsc",
     "build:test": "npm run build && npm run clean",
     "clean": "rm -rf ./build",
     "coverage": "nyc npm test && nyc report --reporter=lcov",
