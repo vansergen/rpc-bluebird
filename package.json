@@ -40,7 +40,7 @@
   "dependencies": {
     "@types/request-promise": "^4.1.46",
     "request": "^2.88.2",
-    "request-promise": "^4.2.5",
+    "request-promise": "^4.2.6",
     "snyk": "^1.316.2"
   },
   "devDependencies": {
