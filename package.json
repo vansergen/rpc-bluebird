@@ -1,6 +1,6 @@
 {
   "name": "rpc-bluebird",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "Simple wrapper of the request-promise in a class",
   "main": "build/index.js",
   "type": "commonjs",
@@ -10,12 +10,14 @@
     "prettier-write": "npm run prettier -- --write",
     "coverage": "nyc npm test && nyc report --reporter=lcov",
     "fresh-install": "rm -fr node_modules && rm -f package-lock.json && npm install",
-    "build": "tsc",
+    "build": "rm -fr build && tsc",
     "test": "mocha -r ts-node/register --full-trace --ui tdd --bail test/*.spec.ts",
     "lint": "eslint --ext .ts,.js ./",
     "lint-fix": "npm run lint -- --fix",
     "prepublishOnly": "npm run prettier && npm run lint && npm run build && npm run prettier-write && npm run lint-fix",
-    "postpublish": "rm -fr build"
+    "postpublish": "rm -fr build",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -36,23 +38,23 @@
   },
   "homepage": "https://github.com/vansergen/rpc-bluebird#readme",
   "dependencies": {
-    "@types/request-promise": "^4.1.45",
+    "@types/request-promise": "^4.1.46",
     "request": "^2.88.2",
-    "request-promise": "^4.2.5"
-  },
+    "request-promise": "^4.2.5",
+    "snyk": "^1.316.1"
   "devDependencies": {
-    "@types/mocha": "^5.2.7",
-    "@typescript-eslint/eslint-plugin": "^2.17.0",
-    "@typescript-eslint/parser": "^2.17.0",
-    "coveralls": "^3.0.9",
+    "@types/mocha": "^7.0.2",
+    "@typescript-eslint/eslint-plugin": "^2.24.0",
+    "@typescript-eslint/parser": "^2.24.0",
+    "coveralls": "^3.0.11",
     "eslint": "^6.8.0",
-    "husky": "^4.2.0",
-    "lint-staged": "^10.0.2",
-    "mocha": "^7.0.0",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
+    "mocha": "^7.1.1",
     "nyc": "^15.0.0",
     "prettier": "^1.19.1",
-    "ts-node": "^8.6.2",
-    "typescript": "^3.7.5"
+    "ts-node": "^8.7.0",
+    "typescript": "^3.8.3"
   },
   "funding": {
     "type": "Coinbase Commerce",
@@ -75,5 +77,6 @@
   },
   "directories": {
     "test": "test"
-  }
+  },
+  "snyk": true
 }
