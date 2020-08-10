@@ -22,8 +22,8 @@ class MyClass extends RPC {
 const myClass = new MyClass();
 myClass
   .get()
-  .then(data => console.log(data))
-  .catch(error => console.error(error))
+  .then((data) => console.log(data))
+  .catch((error) => console.error(error))
   .lastly(() => console.log("It is working with bluebird promises"));
 ```
 
