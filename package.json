@@ -16,7 +16,7 @@
     "lint-fix": "npm run lint -- --fix",
     "prepublishOnly": "npm run prettier && npm run lint && npm run build && npm run prettier-write && npm run lint-fix",
     "postpublish": "rm -fr build",
-    "snyk-protect": "snyk protect",
+    "snyk-protect": "npx snyk protect",
     "prepare": "npm run snyk-protect"
   },
   "repository": {
@@ -40,8 +40,7 @@
   "dependencies": {
     "@types/request-promise": "^4.1.46",
     "request": "^2.88.2",
-    "request-promise": "^4.2.6",
-    "snyk": "^1.370.0"
+    "request-promise": "^4.2.6"
   },
   "devDependencies": {
     "@types/mocha": "^8.0.1",
