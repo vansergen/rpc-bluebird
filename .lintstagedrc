@@ -1,5 +1,0 @@
-"*.{js,ts,json,md}":
-  - npm run prettier:write
-
-"*.{ts,js}":
-  - npm run lint:fix
