@@ -32,7 +32,7 @@
     "url": "git+https://github.com/vansergen/rpc-bluebird.git"
   },
   "engines": {
-    "node": ">=10.18.1"
+    "node": ">=12.20.0"
   },
   "keywords": [
     "rpc",
