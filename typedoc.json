@@ -1,0 +1,8 @@
+{
+  "out": "docs",
+  "mode": "file",
+  "name": "rpc-blubird",
+  "exclude": "test/**/*",
+  "hideGenerator": true,
+  "includeVersion": true
+}
