@@ -1,12 +1,12 @@
 import fetch from "node-fetch";
-import Blubird from "bluebird";
+import Bluebird from "bluebird";
 import { UnsuccessfulFetch } from "./error";
 
 declare module "node-fetch" {
-  let Promise: typeof Blubird;
+  let Promise: typeof Bluebird;
 }
 
-fetch.Promise = Blubird;
+fetch.Promise = Bluebird;
 
 export type ITransformType =
   | "buffer"
@@ -58,40 +58,43 @@ export class FetchClient<T = fetch.Response> {
     );
   }
 
-  public get(path = "", _fetchOptions: fetch.RequestInit = {}): Blubird<T> {
+  public get(path = "", _fetchOptions: fetch.RequestInit = {}): Bluebird<T> {
     return this.fetch(path, { ..._fetchOptions, method: "GET" });
   }
 
-  public head(path = "", _fetchOptions: fetch.RequestInit = {}): Blubird<T> {
+  public head(path = "", _fetchOptions: fetch.RequestInit = {}): Bluebird<T> {
     return this.fetch(path, { ..._fetchOptions, method: "HEAD" });
   }
 
-  public post(path = "", _fetchOptions: fetch.RequestInit = {}): Blubird<T> {
+  public post(path = "", _fetchOptions: fetch.RequestInit = {}): Bluebird<T> {
     return this.fetch(path, { ..._fetchOptions, method: "POST" });
   }
 
-  public put(path = "", _fetchOptions: fetch.RequestInit = {}): Blubird<T> {
+  public put(path = "", _fetchOptions: fetch.RequestInit = {}): Bluebird<T> {
     return this.fetch(path, { ..._fetchOptions, method: "PUT" });
   }
 
-  public delete(path = "", _fetchOptions: fetch.RequestInit = {}): Blubird<T> {
+  public delete(path = "", _fetchOptions: fetch.RequestInit = {}): Bluebird<T> {
     return this.fetch(path, { ..._fetchOptions, method: "DELETE" });
   }
 
-  public options(path = "", _fetchOptions: fetch.RequestInit = {}): Blubird<T> {
+  public options(
+    path = "",
+    _fetchOptions: fetch.RequestInit = {}
+  ): Bluebird<T> {
     return this.fetch(path, { ..._fetchOptions, method: "OPTIONS" });
   }
 
-  public trace(path = "", _fetchOptions: fetch.RequestInit = {}): Blubird<T> {
+  public trace(path = "", _fetchOptions: fetch.RequestInit = {}): Bluebird<T> {
     return this.fetch(path, { ..._fetchOptions, method: "TRACE" });
   }
 
-  public patch(path = "", _fetchOptions: fetch.RequestInit = {}): Blubird<T> {
+  public patch(path = "", _fetchOptions: fetch.RequestInit = {}): Bluebird<T> {
     return this.fetch(path, { ..._fetchOptions, method: "PATCH" });
   }
 
-  public fetch(path = "", options: fetch.RequestInit = {}): Blubird<T> {
-    return new Blubird<T>((resolve, reject) => {
+  public fetch(path = "", options: fetch.RequestInit = {}): Bluebird<T> {
+    return new Bluebird<T>((resolve, reject) => {
       const { baseUrl, rejectNotOk, transform } = this.#clientOptions;
       const url = new URL(path, baseUrl).toString();
       const fetchOptions = FetchClient.mergeFetchOptions(
