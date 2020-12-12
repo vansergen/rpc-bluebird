@@ -1,6 +1,6 @@
 import fetch from "node-fetch";
 import Blubird from "bluebird";
-import { UnsuccessfulFetch } from "./error.js";
+import { UnsuccessfulFetch } from "./error";
 
 declare module "node-fetch" {
   let Promise: typeof Blubird;
@@ -117,15 +117,11 @@ export class FetchClient<T = fetch.Response> {
   }
 
   private static mergeFetchOptions(
-    options1: fetch.RequestInit,
-    options2: fetch.RequestInit
+    { headers: headers1, ...rest1 }: fetch.RequestInit,
+    { headers: headers2, ...rest2 }: fetch.RequestInit
   ): fetch.RequestInit {
-    const headers = new fetch.Headers({
-      ...options1.headers,
-      ...options2.headers,
-    });
-
-    return { ...options1, ...options2, headers };
+    const headers = new fetch.Headers({ ...headers1, ...headers2 });
+    return { ...rest1, ...rest2, headers };
   }
 }
 

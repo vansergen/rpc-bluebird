@@ -1,6 +1,6 @@
 import assert from "assert";
 import http from "http";
-import FetchClient, { UnsuccessfulFetch } from "../";
+import FetchClient, { UnsuccessfulFetch } from "../index";
 import { server, RESPONSE } from "./lib/server";
 import fetch, { Response, Headers } from "node-fetch";
 import Blob from "fetch-blob";
