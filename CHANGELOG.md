@@ -1,5 +1,15 @@
 # Changelog
 
+### [3.0.1](https://github.com/vansergen/rpc-bluebird/compare/v3.0.0...v3.0.1) (2020-12-20)
+
+### Performance Improvements
+
+- allow to add headers of any (supported) type ([e1ffbac](https://github.com/vansergen/rpc-bluebird/commit/e1ffbace5daf08340919899461b87405f6eab9ba))
+
+### Dependencies
+
+- update `@types/node` to `v14.14.14` ([983c6b0](https://github.com/vansergen/rpc-bluebird/commit/983c6b03f2bef358515ecccbe2fa40434a75f9e9))
+
 ## [3.0.0](https://github.com/vansergen/rpc-bluebird/compare/v2.0.3...v3.0.0) (2020-12-12)
 
 ### ⚠ BREAKING CHANGES
