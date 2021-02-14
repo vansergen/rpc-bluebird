@@ -1,8 +1,8 @@
 {
   "out": "docs",
-  "mode": "file",
-  "name": "rpc-blubird",
+  "entryPoints": ["./index.ts"],
+  "name": "rpc-bluebird",
   "exclude": "test/**/*",
   "hideGenerator": true,
-  "includeVersion": true
+  "gitRevision": "master"
 }
