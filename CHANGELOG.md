@@ -1,5 +1,11 @@
 # Changelog
 
+### [3.0.3](https://github.com/vansergen/rpc-bluebird/compare/v3.0.2...v3.0.3) (2021-03-07)
+
+### Dependencies
+
+- upgrade `@types/node` to `v14.14.32` ([14fc028](https://github.com/vansergen/rpc-bluebird/commit/14fc028d8e6dcedf8cbf19f064774a1cb104eb4b))
+
 ### [3.0.2](https://github.com/vansergen/rpc-bluebird/compare/v3.0.1...v3.0.2) (2021-02-14)
 
 ### Dependencies
