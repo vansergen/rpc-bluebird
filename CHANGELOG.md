@@ -1,5 +1,22 @@
 # Changelog
 
+## [4.0.0](https://github.com/vansergen/rpc-bluebird/compare/v3.0.3...v4.0.0) (2022-05-15)
+
+### ⚠ BREAKING CHANGES
+
+- drop Node.js `<16.15.0` support
+
+### Performance Improvements
+
+- drop Node.js `<16.15.0` support ([c27cf69](https://github.com/vansergen/rpc-bluebird/commit/c27cf697d64b183106f468c761fef07b075463b8))
+
+### Dependencies
+
+- remove `@types/node` ([793bf6c](https://github.com/vansergen/rpc-bluebird/commit/793bf6c6efb07f1dc7c3b5eca761ce86ba588785))
+- remove `domexception` ([c53b612](https://github.com/vansergen/rpc-bluebird/commit/c53b6121e9ddd759dbbc9b7d994f95103d4721be))
+- upgrade `domexception` to `v4.0.0` ([7c48ea3](https://github.com/vansergen/rpc-bluebird/commit/7c48ea364743f4ed8f6f5daea4e763dfe37f8cf3))
+- use `v3.0.0-beta.9` for `node-fetch` ([5660e1f](https://github.com/vansergen/rpc-bluebird/commit/5660e1ffde5d004d339e817c67ddfb28eab98c81))
+
 ### [3.0.3](https://github.com/vansergen/rpc-bluebird/compare/v3.0.2...v3.0.3) (2021-03-07)
 
 ### Dependencies

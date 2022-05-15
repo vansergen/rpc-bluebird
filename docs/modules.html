@@ -1,32 +1,30 @@
 <!DOCTYPE html>
-<html class="default no-js">
+<html class="default">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
     <title>rpc-bluebird</title>
     <meta name="description" content="Documentation for rpc-bluebird" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <script async src="assets/js/search.js" id="search-script"></script>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/highlight.css" />
+    <script async src="assets/search.js" id="search-script"></script>
   </head>
   <body>
+    <script>
+      document.body.classList.add(localStorage.getItem("tsd-theme") || "os");
+    </script>
     <header>
       <div class="tsd-page-toolbar">
         <div class="container">
           <div class="table-wrap">
-            <div
-              class="table-cell"
-              id="tsd-search"
-              data-index="assets/js/search.json"
-              data-base="."
-            >
+            <div class="table-cell" id="tsd-search" data-base=".">
               <div class="field">
                 <label
                   for="tsd-search-field"
                   class="tsd-widget search no-caption"
                   >Search</label
-                >
-                <input id="tsd-search-field" type="text" />
+                ><input type="text" id="tsd-search-field" />
               </div>
               <ul class="results">
                 <li class="state loading">Preparing search index...</li>
@@ -51,12 +49,17 @@
                       <li data-value="private" class="selected">All</li>
                     </ul>
                   </div>
-                  <input type="checkbox" id="tsd-filter-inherited" checked />
-                  <label class="tsd-widget" for="tsd-filter-inherited"
+                  <input
+                    type="checkbox"
+                    id="tsd-filter-inherited"
+                    checked
+                  /><label class="tsd-widget" for="tsd-filter-inherited"
                     >Inherited</label
-                  >
-                  <input type="checkbox" id="tsd-filter-externals" checked />
-                  <label class="tsd-widget" for="tsd-filter-externals"
+                  ><input
+                    type="checkbox"
+                    id="tsd-filter-externals"
+                    checked
+                  /><label class="tsd-widget" for="tsd-filter-externals"
                     >Externals</label
                   >
                 </div>
@@ -69,9 +72,7 @@
         </div>
       </div>
       <div class="tsd-page-title">
-        <div class="container">
-          <h1>rpc-bluebird</h1>
-        </div>
+        <div class="container"><h1>rpc-bluebird</h1></div>
       </div>
     </header>
     <div class="container container-main">
@@ -82,23 +83,28 @@
             <section class="tsd-panel tsd-index-panel">
               <div class="tsd-index-content">
                 <section class="tsd-index-section">
+                  <h3>References</h3>
+                  <ul class="tsd-index-list">
+                    <li class="tsd-kind-reference">
+                      <a href="modules.html#default" class="tsd-kind-icon"
+                        >default</a
+                      >
+                    </li>
+                  </ul>
+                </section>
+                <section class="tsd-index-section">
                   <h3>Classes</h3>
                   <ul class="tsd-index-list">
                     <li class="tsd-kind-class tsd-has-type-parameter">
-                      <a href="classes/fetchclient.html" class="tsd-kind-icon"
+                      <a href="classes/FetchClient.html" class="tsd-kind-icon"
                         >Fetch<wbr />Client</a
                       >
                     </li>
                     <li class="tsd-kind-class">
                       <a
-                        href="classes/unsuccessfulfetch.html"
+                        href="classes/UnsuccessfulFetch.html"
                         class="tsd-kind-icon"
                         >Unsuccessful<wbr />Fetch</a
-                      >
-                    </li>
-                    <li class="tsd-kind-class tsd-has-type-parameter">
-                      <a href="classes/default.html" class="tsd-kind-icon"
-                        >default</a
                       >
                     </li>
                   </ul>
@@ -108,14 +114,14 @@
                   <ul class="tsd-index-list">
                     <li class="tsd-kind-interface">
                       <a
-                        href="interfaces/fetchclientoptions.html"
+                        href="interfaces/FetchClientOptions.html"
                         class="tsd-kind-icon"
                         >Fetch<wbr />Client<wbr />Options</a
                       >
                     </li>
                     <li class="tsd-kind-interface">
                       <a
-                        href="interfaces/iclientoptions.html"
+                        href="interfaces/IClientOptions.html"
                         class="tsd-kind-icon"
                         >IClient<wbr />Options</a
                       >
@@ -127,7 +133,7 @@
                   <ul class="tsd-index-list">
                     <li class="tsd-kind-type-alias">
                       <a
-                        href="modules.html#itransformtype"
+                        href="modules.html#ITransformType"
                         class="tsd-kind-icon"
                         >ITransform<wbr />Type</a
                       >
@@ -139,7 +145,7 @@
                   <ul class="tsd-index-list">
                     <li class="tsd-kind-variable">
                       <a
-                        href="modules.html#defaulttransform"
+                        href="modules.html#DefaultTransform"
                         class="tsd-kind-icon"
                         >Default<wbr />Transform</a
                       >
@@ -150,10 +156,65 @@
             </section>
           </section>
           <section class="tsd-panel-group tsd-member-group">
+            <h2>References</h2>
+            <section class="tsd-panel tsd-member tsd-kind-reference">
+              <a id="default" class="tsd-anchor"></a>
+              <h3 class="tsd-anchor-link">
+                default<a
+                  href="#default"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-link"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                    ></path>
+                    <path
+                      d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                    ></path></svg
+                ></a>
+              </h3>
+              Renames and re-exports
+              <a href="classes/FetchClient.html">FetchClient</a>
+            </section>
+          </section>
+          <section class="tsd-panel-group tsd-member-group">
             <h2>Type aliases</h2>
             <section class="tsd-panel tsd-member tsd-kind-type-alias">
-              <a name="itransformtype" class="tsd-anchor"></a>
-              <h3>ITransform<wbr />Type</h3>
+              <a id="ITransformType" class="tsd-anchor"></a>
+              <h3 class="tsd-anchor-link">
+                ITransform<wbr />Type<a
+                  href="#ITransformType"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-link"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                    ></path>
+                    <path
+                      d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                    ></path></svg
+                ></a>
+              </h3>
               <div class="tsd-signature tsd-kind-icon">
                 ITransform<wbr />Type<span class="tsd-signature-symbol">:</span>
                 <span class="tsd-signature-type">&quot;buffer&quot;</span
@@ -173,7 +234,7 @@
                   <li>
                     Defined in
                     <a
-                      href="https://github.com/vansergen/rpc-bluebird/blob/master/src/client.ts#L11"
+                      href="https://github.com/vansergen/rpc-bluebird/blob/main/src/client.ts#L11"
                       >src/client.ts:11</a
                     >
                   </li>
@@ -184,10 +245,31 @@
           <section class="tsd-panel-group tsd-member-group">
             <h2>Variables</h2>
             <section class="tsd-panel tsd-member tsd-kind-variable">
-              <a name="defaulttransform" class="tsd-anchor"></a>
-              <h3>
+              <a id="DefaultTransform" class="tsd-anchor"></a>
+              <h3 class="tsd-anchor-link">
                 <span class="tsd-flag ts-flagConst">Const</span>
-                Default<wbr />Transform
+                Default<wbr />Transform<a
+                  href="#DefaultTransform"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-link"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                    ></path>
+                    <path
+                      d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                    ></path></svg
+                ></a>
               </h3>
               <div class="tsd-signature tsd-kind-icon">
                 Default<wbr />Transform<span class="tsd-signature-symbol"
@@ -201,7 +283,7 @@
                   <li>
                     Defined in
                     <a
-                      href="https://github.com/vansergen/rpc-bluebird/blob/master/src/client.ts#L30"
+                      href="https://github.com/vansergen/rpc-bluebird/blob/main/src/client.ts#L30"
                       >src/client.ts:30</a
                     >
                   </li>
@@ -213,45 +295,43 @@
         <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
           <nav class="tsd-navigation primary">
             <ul>
-              <li class="current">
-                <a href="modules.html">Exports</a>
-              </li>
+              <li class="current"><a href="modules.html">Exports</a></li>
             </ul>
           </nav>
           <nav class="tsd-navigation secondary menu-sticky">
-            <ul class="before-current">
+            <ul>
+              <li class="tsd-kind-reference">
+                <a href="modules.html#default" class="tsd-kind-icon">default</a>
+              </li>
               <li class="tsd-kind-class tsd-has-type-parameter">
-                <a href="classes/fetchclient.html" class="tsd-kind-icon"
+                <a href="classes/FetchClient.html" class="tsd-kind-icon"
                   >Fetch<wbr />Client</a
                 >
               </li>
               <li class="tsd-kind-class">
-                <a href="classes/unsuccessfulfetch.html" class="tsd-kind-icon"
+                <a href="classes/UnsuccessfulFetch.html" class="tsd-kind-icon"
                   >Unsuccessful<wbr />Fetch</a
                 >
               </li>
-              <li class="tsd-kind-class tsd-has-type-parameter">
-                <a href="classes/default.html" class="tsd-kind-icon">default</a>
-              </li>
               <li class="tsd-kind-interface">
                 <a
-                  href="interfaces/fetchclientoptions.html"
+                  href="interfaces/FetchClientOptions.html"
                   class="tsd-kind-icon"
                   >Fetch<wbr />Client<wbr />Options</a
                 >
               </li>
               <li class="tsd-kind-interface">
-                <a href="interfaces/iclientoptions.html" class="tsd-kind-icon"
+                <a href="interfaces/IClientOptions.html" class="tsd-kind-icon"
                   >IClient<wbr />Options</a
                 >
               </li>
               <li class="tsd-kind-type-alias">
-                <a href="modules.html#itransformtype" class="tsd-kind-icon"
+                <a href="modules.html#ITransformType" class="tsd-kind-icon"
                   >ITransform<wbr />Type</a
                 >
               </li>
               <li class="tsd-kind-variable">
-                <a href="modules.html#defaulttransform" class="tsd-kind-icon"
+                <a href="modules.html#DefaultTransform" class="tsd-kind-icon"
                   >Default<wbr />Transform</a
                 >
               </li>
@@ -260,7 +340,7 @@
         </div>
       </div>
     </div>
-    <footer>
+    <footer class="">
       <div class="container">
         <h2>Legend</h2>
         <div class="tsd-legend-group">
@@ -286,9 +366,18 @@
             </li>
           </ul>
         </div>
+        <h2>Settings</h2>
+        <p>
+          Theme
+          <select id="theme">
+            <option value="os">OS</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select>
+        </p>
       </div>
     </footer>
     <div class="overlay"></div>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/main.js"></script>
   </body>
 </html>

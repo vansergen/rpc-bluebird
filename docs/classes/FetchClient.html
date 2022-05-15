@@ -1,32 +1,30 @@
 <!DOCTYPE html>
-<html class="default no-js">
+<html class="default">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>default | rpc-bluebird</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <title>FetchClient | rpc-bluebird</title>
     <meta name="description" content="Documentation for rpc-bluebird" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../assets/css/main.css" />
-    <script async src="../assets/js/search.js" id="search-script"></script>
+    <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="stylesheet" href="../assets/highlight.css" />
+    <script async src="../assets/search.js" id="search-script"></script>
   </head>
   <body>
+    <script>
+      document.body.classList.add(localStorage.getItem("tsd-theme") || "os");
+    </script>
     <header>
       <div class="tsd-page-toolbar">
         <div class="container">
           <div class="table-wrap">
-            <div
-              class="table-cell"
-              id="tsd-search"
-              data-index="../assets/js/search.json"
-              data-base=".."
-            >
+            <div class="table-cell" id="tsd-search" data-base="..">
               <div class="field">
                 <label
                   for="tsd-search-field"
                   class="tsd-widget search no-caption"
                   >Search</label
-                >
-                <input id="tsd-search-field" type="text" />
+                ><input type="text" id="tsd-search-field" />
               </div>
               <ul class="results">
                 <li class="state loading">Preparing search index...</li>
@@ -51,12 +49,17 @@
                       <li data-value="private" class="selected">All</li>
                     </ul>
                   </div>
-                  <input type="checkbox" id="tsd-filter-inherited" checked />
-                  <label class="tsd-widget" for="tsd-filter-inherited"
+                  <input
+                    type="checkbox"
+                    id="tsd-filter-inherited"
+                    checked
+                  /><label class="tsd-widget" for="tsd-filter-inherited"
                     >Inherited</label
-                  >
-                  <input type="checkbox" id="tsd-filter-externals" checked />
-                  <label class="tsd-widget" for="tsd-filter-externals"
+                  ><input
+                    type="checkbox"
+                    id="tsd-filter-externals"
+                    checked
+                  /><label class="tsd-widget" for="tsd-filter-externals"
                     >Externals</label
                   >
                 </div>
@@ -71,14 +74,10 @@
       <div class="tsd-page-title">
         <div class="container">
           <ul class="tsd-breadcrumb">
-            <li>
-              <a href="../modules.html">rpc-bluebird</a>
-            </li>
-            <li>
-              <a href="default.html">default</a>
-            </li>
+            <li><a href="../modules.html">rpc-bluebird</a></li>
+            <li><a href="FetchClient.html">FetchClient</a></li>
           </ul>
-          <h1>Class default&lt;T&gt;</h1>
+          <h1>Class FetchClient&lt;T&gt;</h1>
         </div>
       </div>
     </header>
@@ -98,9 +97,7 @@
           <section class="tsd-panel tsd-hierarchy">
             <h3>Hierarchy</h3>
             <ul class="tsd-hierarchy">
-              <li>
-                <span class="target">default</span>
-              </li>
+              <li><span class="target">FetchClient</span></li>
             </ul>
           </section>
           <section class="tsd-panel-group tsd-index-group">
@@ -113,7 +110,9 @@
                     <li
                       class="tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter"
                     >
-                      <a href="default.html#constructor" class="tsd-kind-icon"
+                      <a
+                        href="FetchClient.html#constructor"
+                        class="tsd-kind-icon"
                         >constructor</a
                       >
                     </li>
@@ -128,7 +127,7 @@
                       class="tsd-kind-property tsd-parent-kind-class tsd-is-private"
                     >
                       <a
-                        href="default.html#_clientoptions"
+                        href="FetchClient.html#_clientOptions"
                         class="tsd-kind-icon"
                         >#client<wbr />Options</a
                       >
@@ -136,7 +135,9 @@
                     <li
                       class="tsd-kind-property tsd-parent-kind-class tsd-is-private"
                     >
-                      <a href="default.html#_fetchoptions" class="tsd-kind-icon"
+                      <a
+                        href="FetchClient.html#_fetchOptions"
+                        class="tsd-kind-icon"
                         >#fetch<wbr />Options</a
                       >
                     </li>
@@ -146,7 +147,9 @@
                   <h3>Accessors</h3>
                   <ul class="tsd-index-list">
                     <li class="tsd-kind-accessor tsd-parent-kind-class">
-                      <a href="default.html#fetchoptions" class="tsd-kind-icon"
+                      <a
+                        href="FetchClient.html#fetchOptions"
+                        class="tsd-kind-icon"
                         >fetch<wbr />Options</a
                       >
                     </li>
@@ -156,39 +159,47 @@
                   <h3>Methods</h3>
                   <ul class="tsd-index-list">
                     <li class="tsd-kind-method tsd-parent-kind-class">
-                      <a href="default.html#delete" class="tsd-kind-icon"
+                      <a href="FetchClient.html#delete" class="tsd-kind-icon"
                         >delete</a
                       >
                     </li>
                     <li class="tsd-kind-method tsd-parent-kind-class">
-                      <a href="default.html#fetch" class="tsd-kind-icon"
+                      <a href="FetchClient.html#fetch" class="tsd-kind-icon"
                         >fetch</a
                       >
                     </li>
                     <li class="tsd-kind-method tsd-parent-kind-class">
-                      <a href="default.html#get" class="tsd-kind-icon">get</a>
+                      <a href="FetchClient.html#get" class="tsd-kind-icon"
+                        >get</a
+                      >
                     </li>
                     <li class="tsd-kind-method tsd-parent-kind-class">
-                      <a href="default.html#head" class="tsd-kind-icon">head</a>
+                      <a href="FetchClient.html#head" class="tsd-kind-icon"
+                        >head</a
+                      >
                     </li>
                     <li class="tsd-kind-method tsd-parent-kind-class">
-                      <a href="default.html#options" class="tsd-kind-icon"
+                      <a href="FetchClient.html#options" class="tsd-kind-icon"
                         >options</a
                       >
                     </li>
                     <li class="tsd-kind-method tsd-parent-kind-class">
-                      <a href="default.html#patch" class="tsd-kind-icon"
+                      <a href="FetchClient.html#patch" class="tsd-kind-icon"
                         >patch</a
                       >
                     </li>
                     <li class="tsd-kind-method tsd-parent-kind-class">
-                      <a href="default.html#post" class="tsd-kind-icon">post</a>
+                      <a href="FetchClient.html#post" class="tsd-kind-icon"
+                        >post</a
+                      >
                     </li>
                     <li class="tsd-kind-method tsd-parent-kind-class">
-                      <a href="default.html#put" class="tsd-kind-icon">put</a>
+                      <a href="FetchClient.html#put" class="tsd-kind-icon"
+                        >put</a
+                      >
                     </li>
                     <li class="tsd-kind-method tsd-parent-kind-class">
-                      <a href="default.html#trace" class="tsd-kind-icon"
+                      <a href="FetchClient.html#trace" class="tsd-kind-icon"
                         >trace</a
                       >
                     </li>
@@ -196,7 +207,7 @@
                       class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"
                     >
                       <a
-                        href="default.html#mergefetchoptions"
+                        href="FetchClient.html#mergeFetchOptions"
                         class="tsd-kind-icon"
                         >merge<wbr />Fetch<wbr />Options</a
                       >
@@ -211,30 +222,65 @@
             <section
               class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter"
             >
-              <a name="constructor" class="tsd-anchor"></a>
-              <h3>constructor</h3>
+              <a id="constructor" class="tsd-anchor"></a>
+              <h3 class="tsd-anchor-link">
+                constructor<a
+                  href="#constructor"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-link"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                    ></path>
+                    <path
+                      d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                    ></path></svg
+                ></a>
+              </h3>
               <ul
                 class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter"
               >
                 <li class="tsd-signature tsd-kind-icon">
-                  new default&lt;T&gt;<span class="tsd-signature-symbol">(</span
-                  >fetchOptions<span class="tsd-signature-symbol">?: </span
+                  new <wbr />Fetch<wbr />Client<span
+                    class="tsd-signature-symbol"
+                    >&lt;</span
+                  ><span
+                    class="tsd-signature-type"
+                    data-tsd-kind="Type parameter"
+                    >T</span
+                  ><span class="tsd-signature-symbol">&gt;</span
+                  ><span class="tsd-signature-symbol">(</span>fetchOptions<span
+                    class="tsd-signature-symbol"
+                    >?: </span
                   ><span class="tsd-signature-type">RequestInit</span>,
                   __namedParameters<span class="tsd-signature-symbol">?: </span
                   ><a
-                    href="../interfaces/fetchclientoptions.html"
+                    href="../interfaces/FetchClientOptions.html"
                     class="tsd-signature-type"
                     data-tsd-kind="Interface"
                     >FetchClientOptions</a
                   ><span class="tsd-signature-symbol">)</span
                   ><span class="tsd-signature-symbol">: </span
                   ><a
-                    href="default.html"
+                    href="FetchClient.html"
                     class="tsd-signature-type"
                     data-tsd-kind="Class"
-                    >default</a
+                    >FetchClient</a
                   ><span class="tsd-signature-symbol">&lt;</span
-                  ><span class="tsd-signature-type">T</span
+                  ><span
+                    class="tsd-signature-type"
+                    data-tsd-kind="Type parameter"
+                    >T</span
                   ><span class="tsd-signature-symbol">&gt;</span>
                 </li>
               </ul>
@@ -245,8 +291,8 @@
                       <li>
                         Defined in
                         <a
-                          href="https://github.com/vansergen/rpc-bluebird/blob/master/src/client.ts#L35"
-                          >src/client.ts:35</a
+                          href="https://github.com/vansergen/rpc-bluebird/blob/main/src/client.ts#L37"
+                          >src/client.ts:37</a
                         >
                       </li>
                     </ul>
@@ -265,30 +311,33 @@
                       <h5>
                         fetchOptions:
                         <span class="tsd-signature-type">RequestInit</span
-                        ><span class="tsd-signature-symbol"> = ...</span>
+                        ><span class="tsd-signature-symbol"> = {}</span>
                       </h5>
                     </li>
                     <li>
                       <h5>
                         __namedParameters:
                         <a
-                          href="../interfaces/fetchclientoptions.html"
+                          href="../interfaces/FetchClientOptions.html"
                           class="tsd-signature-type"
                           data-tsd-kind="Interface"
                           >FetchClientOptions</a
-                        ><span class="tsd-signature-symbol"> = ...</span>
+                        ><span class="tsd-signature-symbol"> = {}</span>
                       </h5>
                     </li>
                   </ul>
                   <h4 class="tsd-returns-title">
                     Returns
                     <a
-                      href="default.html"
+                      href="FetchClient.html"
                       class="tsd-signature-type"
                       data-tsd-kind="Class"
-                      >default</a
+                      >FetchClient</a
                     ><span class="tsd-signature-symbol">&lt;</span
-                    ><span class="tsd-signature-type">T</span
+                    ><span
+                      class="tsd-signature-type"
+                      data-tsd-kind="Type parameter"
+                      >T</span
                     ><span class="tsd-signature-symbol">&gt;</span>
                   </h4>
                 </li>
@@ -302,16 +351,37 @@
             <section
               class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"
             >
-              <a name="_clientoptions" class="tsd-anchor"></a>
-              <h3>
-                <span class="tsd-flag ts-flagReadonly">Readonly</span>
+              <a id="_clientOptions" class="tsd-anchor"></a>
+              <h3 class="tsd-anchor-link">
                 <span class="tsd-flag ts-flagPrivate">Private</span>
-                #client<wbr />Options
+                <span class="tsd-flag ts-flagReadonly">Readonly</span>
+                #client<wbr />Options<a
+                  href="#_clientOptions"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-link"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                    ></path>
+                    <path
+                      d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                    ></path></svg
+                ></a>
               </h3>
               <div class="tsd-signature tsd-kind-icon">
                 #client<wbr />Options<span class="tsd-signature-symbol">:</span>
                 <a
-                  href="../interfaces/iclientoptions.html"
+                  href="../interfaces/IClientOptions.html"
                   class="tsd-signature-type"
                   data-tsd-kind="Interface"
                   >IClientOptions</a
@@ -322,7 +392,7 @@
                   <li>
                     Defined in
                     <a
-                      href="https://github.com/vansergen/rpc-bluebird/blob/master/src/client.ts#L35"
+                      href="https://github.com/vansergen/rpc-bluebird/blob/main/src/client.ts#L35"
                       >src/client.ts:35</a
                     >
                   </li>
@@ -332,10 +402,31 @@
             <section
               class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"
             >
-              <a name="_fetchoptions" class="tsd-anchor"></a>
-              <h3>
+              <a id="_fetchOptions" class="tsd-anchor"></a>
+              <h3 class="tsd-anchor-link">
                 <span class="tsd-flag ts-flagPrivate">Private</span>
-                #fetch<wbr />Options
+                #fetch<wbr />Options<a
+                  href="#_fetchOptions"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-link"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                    ></path>
+                    <path
+                      d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                    ></path></svg
+                ></a>
               </h3>
               <div class="tsd-signature tsd-kind-icon">
                 #fetch<wbr />Options<span class="tsd-signature-symbol">:</span>
@@ -346,7 +437,7 @@
                   <li>
                     Defined in
                     <a
-                      href="https://github.com/vansergen/rpc-bluebird/blob/master/src/client.ts#L33"
+                      href="https://github.com/vansergen/rpc-bluebird/blob/main/src/client.ts#L33"
                       >src/client.ts:33</a
                     >
                   </li>
@@ -359,8 +450,31 @@
             <section
               class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class"
             >
-              <a name="fetchoptions" class="tsd-anchor"></a>
-              <h3>fetch<wbr />Options</h3>
+              <a id="fetchOptions" class="tsd-anchor"></a>
+              <h3 class="tsd-anchor-link">
+                fetch<wbr />Options<a
+                  href="#fetchOptions"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-link"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                    ></path>
+                    <path
+                      d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                    ></path></svg
+                ></a>
+              </h3>
               <ul
                 class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class"
               >
@@ -388,7 +502,7 @@
                       <li>
                         Defined in
                         <a
-                          href="https://github.com/vansergen/rpc-bluebird/blob/master/src/client.ts#L50"
+                          href="https://github.com/vansergen/rpc-bluebird/blob/main/src/client.ts#L50"
                           >src/client.ts:50</a
                         >
                       </li>
@@ -404,7 +518,7 @@
                       <li>
                         Defined in
                         <a
-                          href="https://github.com/vansergen/rpc-bluebird/blob/master/src/client.ts#L54"
+                          href="https://github.com/vansergen/rpc-bluebird/blob/main/src/client.ts#L54"
                           >src/client.ts:54</a
                         >
                       </li>
@@ -431,8 +545,31 @@
             <section
               class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"
             >
-              <a name="delete" class="tsd-anchor"></a>
-              <h3>delete</h3>
+              <a id="delete" class="tsd-anchor"></a>
+              <h3 class="tsd-anchor-link">
+                delete<a
+                  href="#delete"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-link"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                    ></path>
+                    <path
+                      d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                    ></path></svg
+                ></a>
+              </h3>
               <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
                 <li class="tsd-signature tsd-kind-icon">
                   delete<span class="tsd-signature-symbol">(</span>path<span
@@ -445,7 +582,10 @@
                   ><span class="tsd-signature-symbol">: </span
                   ><span class="tsd-signature-type">Bluebird</span
                   ><span class="tsd-signature-symbol">&lt;</span
-                  ><span class="tsd-signature-type">T</span
+                  ><span
+                    class="tsd-signature-type"
+                    data-tsd-kind="Type parameter"
+                    >T</span
                   ><span class="tsd-signature-symbol">&gt;</span>
                 </li>
               </ul>
@@ -456,7 +596,7 @@
                       <li>
                         Defined in
                         <a
-                          href="https://github.com/vansergen/rpc-bluebird/blob/master/src/client.ts#L77"
+                          href="https://github.com/vansergen/rpc-bluebird/blob/main/src/client.ts#L77"
                           >src/client.ts:77</a
                         >
                       </li>
@@ -476,14 +616,17 @@
                       <h5>
                         _fetchOptions:
                         <span class="tsd-signature-type">RequestInit</span
-                        ><span class="tsd-signature-symbol"> = ...</span>
+                        ><span class="tsd-signature-symbol"> = {}</span>
                       </h5>
                     </li>
                   </ul>
                   <h4 class="tsd-returns-title">
                     Returns <span class="tsd-signature-type">Bluebird</span
                     ><span class="tsd-signature-symbol">&lt;</span
-                    ><span class="tsd-signature-type">T</span
+                    ><span
+                      class="tsd-signature-type"
+                      data-tsd-kind="Type parameter"
+                      >T</span
                     ><span class="tsd-signature-symbol">&gt;</span>
                   </h4>
                 </li>
@@ -492,8 +635,31 @@
             <section
               class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"
             >
-              <a name="fetch" class="tsd-anchor"></a>
-              <h3>fetch</h3>
+              <a id="fetch" class="tsd-anchor"></a>
+              <h3 class="tsd-anchor-link">
+                fetch<a
+                  href="#fetch"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-link"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                    ></path>
+                    <path
+                      d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                    ></path></svg
+                ></a>
+              </h3>
               <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
                 <li class="tsd-signature tsd-kind-icon">
                   fetch<span class="tsd-signature-symbol">(</span>path<span
@@ -507,7 +673,10 @@
                   ><span class="tsd-signature-symbol">: </span
                   ><span class="tsd-signature-type">Bluebird</span
                   ><span class="tsd-signature-symbol">&lt;</span
-                  ><span class="tsd-signature-type">T</span
+                  ><span
+                    class="tsd-signature-type"
+                    data-tsd-kind="Type parameter"
+                    >T</span
                   ><span class="tsd-signature-symbol">&gt;</span>
                 </li>
               </ul>
@@ -518,7 +687,7 @@
                       <li>
                         Defined in
                         <a
-                          href="https://github.com/vansergen/rpc-bluebird/blob/master/src/client.ts#L96"
+                          href="https://github.com/vansergen/rpc-bluebird/blob/main/src/client.ts#L96"
                           >src/client.ts:96</a
                         >
                       </li>
@@ -538,14 +707,17 @@
                       <h5>
                         options:
                         <span class="tsd-signature-type">RequestInit</span
-                        ><span class="tsd-signature-symbol"> = ...</span>
+                        ><span class="tsd-signature-symbol"> = {}</span>
                       </h5>
                     </li>
                   </ul>
                   <h4 class="tsd-returns-title">
                     Returns <span class="tsd-signature-type">Bluebird</span
                     ><span class="tsd-signature-symbol">&lt;</span
-                    ><span class="tsd-signature-type">T</span
+                    ><span
+                      class="tsd-signature-type"
+                      data-tsd-kind="Type parameter"
+                      >T</span
                     ><span class="tsd-signature-symbol">&gt;</span>
                   </h4>
                 </li>
@@ -554,8 +726,28 @@
             <section
               class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"
             >
-              <a name="get" class="tsd-anchor"></a>
-              <h3>get</h3>
+              <a id="get" class="tsd-anchor"></a>
+              <h3 class="tsd-anchor-link">
+                get<a href="#get" aria-label="Permalink" class="tsd-anchor-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-link"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                    ></path>
+                    <path
+                      d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                    ></path></svg
+                ></a>
+              </h3>
               <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
                 <li class="tsd-signature tsd-kind-icon">
                   get<span class="tsd-signature-symbol">(</span>path<span
@@ -568,7 +760,10 @@
                   ><span class="tsd-signature-symbol">: </span
                   ><span class="tsd-signature-type">Bluebird</span
                   ><span class="tsd-signature-symbol">&lt;</span
-                  ><span class="tsd-signature-type">T</span
+                  ><span
+                    class="tsd-signature-type"
+                    data-tsd-kind="Type parameter"
+                    >T</span
                   ><span class="tsd-signature-symbol">&gt;</span>
                 </li>
               </ul>
@@ -579,7 +774,7 @@
                       <li>
                         Defined in
                         <a
-                          href="https://github.com/vansergen/rpc-bluebird/blob/master/src/client.ts#L61"
+                          href="https://github.com/vansergen/rpc-bluebird/blob/main/src/client.ts#L61"
                           >src/client.ts:61</a
                         >
                       </li>
@@ -599,14 +794,17 @@
                       <h5>
                         _fetchOptions:
                         <span class="tsd-signature-type">RequestInit</span
-                        ><span class="tsd-signature-symbol"> = ...</span>
+                        ><span class="tsd-signature-symbol"> = {}</span>
                       </h5>
                     </li>
                   </ul>
                   <h4 class="tsd-returns-title">
                     Returns <span class="tsd-signature-type">Bluebird</span
                     ><span class="tsd-signature-symbol">&lt;</span
-                    ><span class="tsd-signature-type">T</span
+                    ><span
+                      class="tsd-signature-type"
+                      data-tsd-kind="Type parameter"
+                      >T</span
                     ><span class="tsd-signature-symbol">&gt;</span>
                   </h4>
                 </li>
@@ -615,8 +813,31 @@
             <section
               class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"
             >
-              <a name="head" class="tsd-anchor"></a>
-              <h3>head</h3>
+              <a id="head" class="tsd-anchor"></a>
+              <h3 class="tsd-anchor-link">
+                head<a
+                  href="#head"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-link"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                    ></path>
+                    <path
+                      d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                    ></path></svg
+                ></a>
+              </h3>
               <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
                 <li class="tsd-signature tsd-kind-icon">
                   head<span class="tsd-signature-symbol">(</span>path<span
@@ -629,7 +850,10 @@
                   ><span class="tsd-signature-symbol">: </span
                   ><span class="tsd-signature-type">Bluebird</span
                   ><span class="tsd-signature-symbol">&lt;</span
-                  ><span class="tsd-signature-type">T</span
+                  ><span
+                    class="tsd-signature-type"
+                    data-tsd-kind="Type parameter"
+                    >T</span
                   ><span class="tsd-signature-symbol">&gt;</span>
                 </li>
               </ul>
@@ -640,7 +864,7 @@
                       <li>
                         Defined in
                         <a
-                          href="https://github.com/vansergen/rpc-bluebird/blob/master/src/client.ts#L65"
+                          href="https://github.com/vansergen/rpc-bluebird/blob/main/src/client.ts#L65"
                           >src/client.ts:65</a
                         >
                       </li>
@@ -660,14 +884,17 @@
                       <h5>
                         _fetchOptions:
                         <span class="tsd-signature-type">RequestInit</span
-                        ><span class="tsd-signature-symbol"> = ...</span>
+                        ><span class="tsd-signature-symbol"> = {}</span>
                       </h5>
                     </li>
                   </ul>
                   <h4 class="tsd-returns-title">
                     Returns <span class="tsd-signature-type">Bluebird</span
                     ><span class="tsd-signature-symbol">&lt;</span
-                    ><span class="tsd-signature-type">T</span
+                    ><span
+                      class="tsd-signature-type"
+                      data-tsd-kind="Type parameter"
+                      >T</span
                     ><span class="tsd-signature-symbol">&gt;</span>
                   </h4>
                 </li>
@@ -676,8 +903,31 @@
             <section
               class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"
             >
-              <a name="options" class="tsd-anchor"></a>
-              <h3>options</h3>
+              <a id="options" class="tsd-anchor"></a>
+              <h3 class="tsd-anchor-link">
+                options<a
+                  href="#options"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-link"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                    ></path>
+                    <path
+                      d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                    ></path></svg
+                ></a>
+              </h3>
               <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
                 <li class="tsd-signature tsd-kind-icon">
                   options<span class="tsd-signature-symbol">(</span>path<span
@@ -690,7 +940,10 @@
                   ><span class="tsd-signature-symbol">: </span
                   ><span class="tsd-signature-type">Bluebird</span
                   ><span class="tsd-signature-symbol">&lt;</span
-                  ><span class="tsd-signature-type">T</span
+                  ><span
+                    class="tsd-signature-type"
+                    data-tsd-kind="Type parameter"
+                    >T</span
                   ><span class="tsd-signature-symbol">&gt;</span>
                 </li>
               </ul>
@@ -701,7 +954,7 @@
                       <li>
                         Defined in
                         <a
-                          href="https://github.com/vansergen/rpc-bluebird/blob/master/src/client.ts#L81"
+                          href="https://github.com/vansergen/rpc-bluebird/blob/main/src/client.ts#L81"
                           >src/client.ts:81</a
                         >
                       </li>
@@ -721,14 +974,17 @@
                       <h5>
                         _fetchOptions:
                         <span class="tsd-signature-type">RequestInit</span
-                        ><span class="tsd-signature-symbol"> = ...</span>
+                        ><span class="tsd-signature-symbol"> = {}</span>
                       </h5>
                     </li>
                   </ul>
                   <h4 class="tsd-returns-title">
                     Returns <span class="tsd-signature-type">Bluebird</span
                     ><span class="tsd-signature-symbol">&lt;</span
-                    ><span class="tsd-signature-type">T</span
+                    ><span
+                      class="tsd-signature-type"
+                      data-tsd-kind="Type parameter"
+                      >T</span
                     ><span class="tsd-signature-symbol">&gt;</span>
                   </h4>
                 </li>
@@ -737,8 +993,31 @@
             <section
               class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"
             >
-              <a name="patch" class="tsd-anchor"></a>
-              <h3>patch</h3>
+              <a id="patch" class="tsd-anchor"></a>
+              <h3 class="tsd-anchor-link">
+                patch<a
+                  href="#patch"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-link"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                    ></path>
+                    <path
+                      d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                    ></path></svg
+                ></a>
+              </h3>
               <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
                 <li class="tsd-signature tsd-kind-icon">
                   patch<span class="tsd-signature-symbol">(</span>path<span
@@ -751,7 +1030,10 @@
                   ><span class="tsd-signature-symbol">: </span
                   ><span class="tsd-signature-type">Bluebird</span
                   ><span class="tsd-signature-symbol">&lt;</span
-                  ><span class="tsd-signature-type">T</span
+                  ><span
+                    class="tsd-signature-type"
+                    data-tsd-kind="Type parameter"
+                    >T</span
                   ><span class="tsd-signature-symbol">&gt;</span>
                 </li>
               </ul>
@@ -762,7 +1044,7 @@
                       <li>
                         Defined in
                         <a
-                          href="https://github.com/vansergen/rpc-bluebird/blob/master/src/client.ts#L92"
+                          href="https://github.com/vansergen/rpc-bluebird/blob/main/src/client.ts#L92"
                           >src/client.ts:92</a
                         >
                       </li>
@@ -782,14 +1064,17 @@
                       <h5>
                         _fetchOptions:
                         <span class="tsd-signature-type">RequestInit</span
-                        ><span class="tsd-signature-symbol"> = ...</span>
+                        ><span class="tsd-signature-symbol"> = {}</span>
                       </h5>
                     </li>
                   </ul>
                   <h4 class="tsd-returns-title">
                     Returns <span class="tsd-signature-type">Bluebird</span
                     ><span class="tsd-signature-symbol">&lt;</span
-                    ><span class="tsd-signature-type">T</span
+                    ><span
+                      class="tsd-signature-type"
+                      data-tsd-kind="Type parameter"
+                      >T</span
                     ><span class="tsd-signature-symbol">&gt;</span>
                   </h4>
                 </li>
@@ -798,8 +1083,31 @@
             <section
               class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"
             >
-              <a name="post" class="tsd-anchor"></a>
-              <h3>post</h3>
+              <a id="post" class="tsd-anchor"></a>
+              <h3 class="tsd-anchor-link">
+                post<a
+                  href="#post"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-link"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                    ></path>
+                    <path
+                      d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                    ></path></svg
+                ></a>
+              </h3>
               <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
                 <li class="tsd-signature tsd-kind-icon">
                   post<span class="tsd-signature-symbol">(</span>path<span
@@ -812,7 +1120,10 @@
                   ><span class="tsd-signature-symbol">: </span
                   ><span class="tsd-signature-type">Bluebird</span
                   ><span class="tsd-signature-symbol">&lt;</span
-                  ><span class="tsd-signature-type">T</span
+                  ><span
+                    class="tsd-signature-type"
+                    data-tsd-kind="Type parameter"
+                    >T</span
                   ><span class="tsd-signature-symbol">&gt;</span>
                 </li>
               </ul>
@@ -823,7 +1134,7 @@
                       <li>
                         Defined in
                         <a
-                          href="https://github.com/vansergen/rpc-bluebird/blob/master/src/client.ts#L69"
+                          href="https://github.com/vansergen/rpc-bluebird/blob/main/src/client.ts#L69"
                           >src/client.ts:69</a
                         >
                       </li>
@@ -843,14 +1154,17 @@
                       <h5>
                         _fetchOptions:
                         <span class="tsd-signature-type">RequestInit</span
-                        ><span class="tsd-signature-symbol"> = ...</span>
+                        ><span class="tsd-signature-symbol"> = {}</span>
                       </h5>
                     </li>
                   </ul>
                   <h4 class="tsd-returns-title">
                     Returns <span class="tsd-signature-type">Bluebird</span
                     ><span class="tsd-signature-symbol">&lt;</span
-                    ><span class="tsd-signature-type">T</span
+                    ><span
+                      class="tsd-signature-type"
+                      data-tsd-kind="Type parameter"
+                      >T</span
                     ><span class="tsd-signature-symbol">&gt;</span>
                   </h4>
                 </li>
@@ -859,8 +1173,28 @@
             <section
               class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"
             >
-              <a name="put" class="tsd-anchor"></a>
-              <h3>put</h3>
+              <a id="put" class="tsd-anchor"></a>
+              <h3 class="tsd-anchor-link">
+                put<a href="#put" aria-label="Permalink" class="tsd-anchor-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-link"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                    ></path>
+                    <path
+                      d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                    ></path></svg
+                ></a>
+              </h3>
               <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
                 <li class="tsd-signature tsd-kind-icon">
                   put<span class="tsd-signature-symbol">(</span>path<span
@@ -873,7 +1207,10 @@
                   ><span class="tsd-signature-symbol">: </span
                   ><span class="tsd-signature-type">Bluebird</span
                   ><span class="tsd-signature-symbol">&lt;</span
-                  ><span class="tsd-signature-type">T</span
+                  ><span
+                    class="tsd-signature-type"
+                    data-tsd-kind="Type parameter"
+                    >T</span
                   ><span class="tsd-signature-symbol">&gt;</span>
                 </li>
               </ul>
@@ -884,7 +1221,7 @@
                       <li>
                         Defined in
                         <a
-                          href="https://github.com/vansergen/rpc-bluebird/blob/master/src/client.ts#L73"
+                          href="https://github.com/vansergen/rpc-bluebird/blob/main/src/client.ts#L73"
                           >src/client.ts:73</a
                         >
                       </li>
@@ -904,14 +1241,17 @@
                       <h5>
                         _fetchOptions:
                         <span class="tsd-signature-type">RequestInit</span
-                        ><span class="tsd-signature-symbol"> = ...</span>
+                        ><span class="tsd-signature-symbol"> = {}</span>
                       </h5>
                     </li>
                   </ul>
                   <h4 class="tsd-returns-title">
                     Returns <span class="tsd-signature-type">Bluebird</span
                     ><span class="tsd-signature-symbol">&lt;</span
-                    ><span class="tsd-signature-type">T</span
+                    ><span
+                      class="tsd-signature-type"
+                      data-tsd-kind="Type parameter"
+                      >T</span
                     ><span class="tsd-signature-symbol">&gt;</span>
                   </h4>
                 </li>
@@ -920,8 +1260,31 @@
             <section
               class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"
             >
-              <a name="trace" class="tsd-anchor"></a>
-              <h3>trace</h3>
+              <a id="trace" class="tsd-anchor"></a>
+              <h3 class="tsd-anchor-link">
+                trace<a
+                  href="#trace"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-link"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                    ></path>
+                    <path
+                      d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                    ></path></svg
+                ></a>
+              </h3>
               <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
                 <li class="tsd-signature tsd-kind-icon">
                   trace<span class="tsd-signature-symbol">(</span>path<span
@@ -934,7 +1297,10 @@
                   ><span class="tsd-signature-symbol">: </span
                   ><span class="tsd-signature-type">Bluebird</span
                   ><span class="tsd-signature-symbol">&lt;</span
-                  ><span class="tsd-signature-type">T</span
+                  ><span
+                    class="tsd-signature-type"
+                    data-tsd-kind="Type parameter"
+                    >T</span
                   ><span class="tsd-signature-symbol">&gt;</span>
                 </li>
               </ul>
@@ -945,7 +1311,7 @@
                       <li>
                         Defined in
                         <a
-                          href="https://github.com/vansergen/rpc-bluebird/blob/master/src/client.ts#L88"
+                          href="https://github.com/vansergen/rpc-bluebird/blob/main/src/client.ts#L88"
                           >src/client.ts:88</a
                         >
                       </li>
@@ -965,14 +1331,17 @@
                       <h5>
                         _fetchOptions:
                         <span class="tsd-signature-type">RequestInit</span
-                        ><span class="tsd-signature-symbol"> = ...</span>
+                        ><span class="tsd-signature-symbol"> = {}</span>
                       </h5>
                     </li>
                   </ul>
                   <h4 class="tsd-returns-title">
                     Returns <span class="tsd-signature-type">Bluebird</span
                     ><span class="tsd-signature-symbol">&lt;</span
-                    ><span class="tsd-signature-type">T</span
+                    ><span
+                      class="tsd-signature-type"
+                      data-tsd-kind="Type parameter"
+                      >T</span
                     ><span class="tsd-signature-symbol">&gt;</span>
                   </h4>
                 </li>
@@ -981,11 +1350,32 @@
             <section
               class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"
             >
-              <a name="mergefetchoptions" class="tsd-anchor"></a>
-              <h3>
-                <span class="tsd-flag ts-flagPrivate">Private</span>
+              <a id="mergeFetchOptions" class="tsd-anchor"></a>
+              <h3 class="tsd-anchor-link">
                 <span class="tsd-flag ts-flagStatic">Static</span>
-                merge<wbr />Fetch<wbr />Options
+                <span class="tsd-flag ts-flagPrivate">Private</span>
+                merge<wbr />Fetch<wbr />Options<a
+                  href="#mergeFetchOptions"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-link"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                    ></path>
+                    <path
+                      d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                    ></path></svg
+                ></a>
               </h3>
               <ul
                 class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"
@@ -1010,7 +1400,7 @@
                       <li>
                         Defined in
                         <a
-                          href="https://github.com/vansergen/rpc-bluebird/blob/master/src/client.ts#L122"
+                          href="https://github.com/vansergen/rpc-bluebird/blob/main/src/client.ts#L122"
                           >src/client.ts:122</a
                         >
                       </li>
@@ -1042,90 +1432,94 @@
         <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
           <nav class="tsd-navigation primary">
             <ul>
-              <li class=" ">
-                <a href="../modules.html">Exports</a>
-              </li>
+              <li class=""><a href="../modules.html">Exports</a></li>
             </ul>
           </nav>
           <nav class="tsd-navigation secondary menu-sticky">
-            <ul class="before-current">
-              <li class="tsd-kind-class tsd-has-type-parameter">
-                <a href="fetchclient.html" class="tsd-kind-icon"
+            <ul>
+              <li class="current tsd-kind-class tsd-has-type-parameter">
+                <a href="FetchClient.html" class="tsd-kind-icon"
                   >Fetch<wbr />Client</a
                 >
-              </li>
-              <li class="tsd-kind-class">
-                <a href="unsuccessfulfetch.html" class="tsd-kind-icon"
-                  >Unsuccessful<wbr />Fetch</a
-                >
-              </li>
-            </ul>
-            <ul class="current">
-              <li class="current tsd-kind-class tsd-has-type-parameter">
-                <a href="default.html" class="tsd-kind-icon">default</a>
                 <ul>
                   <li
                     class="tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter"
                   >
-                    <a href="default.html#constructor" class="tsd-kind-icon"
+                    <a href="FetchClient.html#constructor" class="tsd-kind-icon"
                       >constructor</a
                     >
                   </li>
                   <li
                     class="tsd-kind-property tsd-parent-kind-class tsd-is-private"
                   >
-                    <a href="default.html#_clientoptions" class="tsd-kind-icon"
+                    <a
+                      href="FetchClient.html#_clientOptions"
+                      class="tsd-kind-icon"
                       >#client<wbr />Options</a
                     >
                   </li>
                   <li
                     class="tsd-kind-property tsd-parent-kind-class tsd-is-private"
                   >
-                    <a href="default.html#_fetchoptions" class="tsd-kind-icon"
+                    <a
+                      href="FetchClient.html#_fetchOptions"
+                      class="tsd-kind-icon"
                       >#fetch<wbr />Options</a
                     >
                   </li>
                   <li class="tsd-kind-accessor tsd-parent-kind-class">
-                    <a href="default.html#fetchoptions" class="tsd-kind-icon"
+                    <a
+                      href="FetchClient.html#fetchOptions"
+                      class="tsd-kind-icon"
                       >fetch<wbr />Options</a
                     >
                   </li>
                   <li class="tsd-kind-method tsd-parent-kind-class">
-                    <a href="default.html#delete" class="tsd-kind-icon"
+                    <a href="FetchClient.html#delete" class="tsd-kind-icon"
                       >delete</a
                     >
                   </li>
                   <li class="tsd-kind-method tsd-parent-kind-class">
-                    <a href="default.html#fetch" class="tsd-kind-icon">fetch</a>
+                    <a href="FetchClient.html#fetch" class="tsd-kind-icon"
+                      >fetch</a
+                    >
                   </li>
                   <li class="tsd-kind-method tsd-parent-kind-class">
-                    <a href="default.html#get" class="tsd-kind-icon">get</a>
+                    <a href="FetchClient.html#get" class="tsd-kind-icon">get</a>
                   </li>
                   <li class="tsd-kind-method tsd-parent-kind-class">
-                    <a href="default.html#head" class="tsd-kind-icon">head</a>
+                    <a href="FetchClient.html#head" class="tsd-kind-icon"
+                      >head</a
+                    >
                   </li>
                   <li class="tsd-kind-method tsd-parent-kind-class">
-                    <a href="default.html#options" class="tsd-kind-icon"
+                    <a href="FetchClient.html#options" class="tsd-kind-icon"
                       >options</a
                     >
                   </li>
                   <li class="tsd-kind-method tsd-parent-kind-class">
-                    <a href="default.html#patch" class="tsd-kind-icon">patch</a>
+                    <a href="FetchClient.html#patch" class="tsd-kind-icon"
+                      >patch</a
+                    >
                   </li>
                   <li class="tsd-kind-method tsd-parent-kind-class">
-                    <a href="default.html#post" class="tsd-kind-icon">post</a>
+                    <a href="FetchClient.html#post" class="tsd-kind-icon"
+                      >post</a
+                    >
                   </li>
                   <li class="tsd-kind-method tsd-parent-kind-class">
-                    <a href="default.html#put" class="tsd-kind-icon">put</a>
+                    <a href="FetchClient.html#put" class="tsd-kind-icon">put</a>
                   </li>
                   <li class="tsd-kind-method tsd-parent-kind-class">
-                    <a href="default.html#trace" class="tsd-kind-icon">trace</a>
+                    <a href="FetchClient.html#trace" class="tsd-kind-icon"
+                      >trace</a
+                    >
                   </li>
                   <li
                     class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"
                   >
                     <a
-                      href="default.html#mergefetchoptions"
+                      href="FetchClient.html#mergeFetchOptions"
                       class="tsd-kind-icon"
                       >merge<wbr />Fetch<wbr />Options</a
                     >
@@ -1133,37 +1527,11 @@
                 </ul>
               </li>
             </ul>
-            <ul class="after-current">
-              <li class="tsd-kind-interface">
-                <a
-                  href="../interfaces/fetchclientoptions.html"
-                  class="tsd-kind-icon"
-                  >Fetch<wbr />Client<wbr />Options</a
-                >
-              </li>
-              <li class="tsd-kind-interface">
-                <a
-                  href="../interfaces/iclientoptions.html"
-                  class="tsd-kind-icon"
-                  >IClient<wbr />Options</a
-                >
-              </li>
-              <li class="tsd-kind-type-alias">
-                <a href="../modules.html#itransformtype" class="tsd-kind-icon"
-                  >ITransform<wbr />Type</a
-                >
-              </li>
-              <li class="tsd-kind-variable">
-                <a href="../modules.html#defaulttransform" class="tsd-kind-icon"
-                  >Default<wbr />Transform</a
-                >
-              </li>
-            </ul>
           </nav>
         </div>
       </div>
     </div>
-    <footer>
+    <footer class="">
       <div class="container">
         <h2>Legend</h2>
         <div class="tsd-legend-group">
@@ -1189,9 +1557,18 @@
             </li>
           </ul>
         </div>
+        <h2>Settings</h2>
+        <p>
+          Theme
+          <select id="theme">
+            <option value="os">OS</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select>
+        </p>
       </div>
     </footer>
     <div class="overlay"></div>
-    <script src="../assets/js/main.js"></script>
+    <script src="../assets/main.js"></script>
   </body>
 </html>
