@@ -10,12 +10,15 @@ jobs:
       matrix:
         node-version: [16]
 
-    container: node:${{ matrix.node-version }}-buster
-
     steps:
       - uses: actions/checkout@main
         with:
           fetch-depth: 0
+
+      - uses: actions/setup-node@main
+        with:
+          node-version: ${{ matrix.node-version }}
+          check-latest: true
 
       - name: Node.js version
         run: node --version
@@ -58,10 +61,12 @@ jobs:
   coverage:
     runs-on: ubuntu-latest
 
-    container: node:14
-
     steps:
       - uses: actions/checkout@main
+
+      - uses: actions/setup-node@main
+        with:
+          node-version: 16
 
       - name: Node.js version
         run: node --version
@@ -85,12 +90,14 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    container: node:14-buster
-
     steps:
       - uses: actions/checkout@main
         with:
           fetch-depth: 0
+
+      - uses: actions/setup-node@main
+        with:
+          node-version: 16
 
       - name: Node.js version
         run: node --version
