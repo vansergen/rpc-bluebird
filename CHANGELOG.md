@@ -1,5 +1,19 @@
 # Changelog
 
+## [5.0.0](https://github.com/vansergen/rpc-bluebird/compare/v4.0.0...v5.0.0) (2022-05-15)
+
+### ⚠ BREAKING CHANGES
+
+- change the package type from `commonjs` to `module`
+
+### Performance Improvements
+
+- change the package type from `commonjs` to `module` ([fa17b26](https://github.com/vansergen/rpc-bluebird/commit/fa17b26d6a5e5e61c6665a1e78c9b6ca9f40939d))
+
+### Dependencies
+
+- upgrade `node-fetch` to `v3.2.4` ([bc8d0f4](https://github.com/vansergen/rpc-bluebird/commit/bc8d0f4d9e4f8e72c97229403d6e7cb632ea9258))
+
 ## [4.0.0](https://github.com/vansergen/rpc-bluebird/compare/v3.0.3...v4.0.0) (2022-05-15)
 
 ### ⚠ BREAKING CHANGES
