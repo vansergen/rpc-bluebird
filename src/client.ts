@@ -2,11 +2,7 @@ import fetch, { Headers, RequestInit, Response } from "node-fetch";
 import Bluebird from "bluebird";
 import { UnsuccessfulFetch } from "./error.js";
 
-declare module "node-fetch" {
-  let Promise: typeof Bluebird;
-}
-
-fetch.Promise = Bluebird;
+(fetch as { Promise?: typeof Bluebird }).Promise = Bluebird;
 
 export type ITransformType =
   | "buffer"

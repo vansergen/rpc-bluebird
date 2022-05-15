@@ -15,7 +15,7 @@ describe("FetchClient", () => {
   afterEach((done) => server.close(done));
 
   it("Uses bluebird promises by default", async () => {
-    deepStrictEqual(fetch.Promise, Bluebird);
+    deepStrictEqual((fetch as { Promise?: typeof Bluebird }).Promise, Bluebird);
     const client = new FetchClient({}, { baseUrl });
     const response = client.fetch();
     ok(response instanceof Bluebird);
