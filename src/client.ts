@@ -106,7 +106,7 @@ export class FetchClient<T = fetch.Response> {
           if (rejectNotOk && !response.ok) {
             reject(new UnsuccessfulFetch(response.statusText, response));
           } else if (transform === "raw") {
-            resolve((response as unknown) as T);
+            resolve(response as unknown as T);
           } else {
             response[transform]()
               .then((data) => {
