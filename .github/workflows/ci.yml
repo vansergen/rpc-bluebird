@@ -41,8 +41,15 @@ jobs:
       - name: ESLint
         run: npm run lint
 
-      - name: Tests
-        run: npm run test:ci
+      - name: Coverage
+        run: npm run coverage:ci
+
+      - name: Coveralls
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.github_token }}
+          flag-name: Node.js v${{ matrix.node-version }}
+          parallel: true
 
       - name: Publish test
         run: npm run publish:test
@@ -51,32 +58,16 @@ jobs:
         run: npm audit --production
 
   coverage:
+    needs: [test]
+
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@main
-
-      - uses: actions/setup-node@main
-        with:
-          node-version: 16
-          check-latest: true
-
-      - name: Node.js version
-        run: node --version
-
-      - name: npm version
-        run: npm --version
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Coverage
-        run: npm run coverage
-
-      - name: Coveralls
+      - name: Coveralls Finished
         uses: coverallsapp/github-action@master
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.github_token }}
+          parallel-finished: true
 
   docs:
     runs-on: ubuntu-latest
@@ -110,39 +101,27 @@ jobs:
           node-version: 16
           check-latest: true
 
-      - name: Node.js version
-        run: node --version
-
-      - name: npm version
-        run: npm --version
-
-      - name: git version
-        run: git --version
-
-      - name: gpg version
-        run: gpg --version
-
       - name: Install dependencies
         run: npm ci
 
       - name: Decrypt PGP key
         run: ./.github/scripts/decrypt.sh
+        env:
+          PRIVATE_KEY_PASSPHRASE: ${{ secrets.PRIVATE_KEY_PASSPHRASE }}
 
       - name: Setup git
         run: ./.github/scripts/git.sh
+        env:
+          PGP_KEY_ID: ${{ secrets.PGP_KEY_ID }}
 
       - name: Release
         run: npm run release
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GIT_COMMITTER_EMAIL: ${{ secrets.GIT_COMMITTER_EMAIL }}
+          GIT_COMMITTER_NAME: ${{ secrets.GIT_COMMITTER_NAME }}
+          PGP_PASSPHRASE: ${{ secrets.PGP_PASSPHRASE }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Cleanup
         run: ./.github/scripts/cleanup.sh
-
-    env:
-      GH_TOKEN: ${{ secrets.GH_TOKEN }}
-      GIT_COMMITTER_EMAIL: ${{ secrets.GIT_COMMITTER_EMAIL }}
-      GIT_COMMITTER_NAME: ${{ secrets.GIT_COMMITTER_NAME }}
-      NPM_CONFIG_UNSAFE_PERM: true
-      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      PGP_KEY_ID: ${{ secrets.PGP_KEY_ID }}
-      PGP_PASSPHRASE: ${{ secrets.PGP_PASSPHRASE }}
-      PRIVATE_KEY_PASSPHRASE: ${{ secrets.PRIVATE_KEY_PASSPHRASE }}
