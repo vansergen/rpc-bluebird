@@ -1,5 +1,11 @@
 # Changelog
 
+### [5.0.1](https://github.com/vansergen/rpc-bluebird/compare/v5.0.0...v5.0.1) (2022-06-24)
+
+### Dependencies
+
+- upgrade `node-fetch` to `v3.2.6` ([711c493](https://github.com/vansergen/rpc-bluebird/commit/711c493aae9e4e6bcf64b0d3824d792108c9a381))
+
 ## [5.0.0](https://github.com/vansergen/rpc-bluebird/compare/v4.0.0...v5.0.0) (2022-05-15)
 
 ### ⚠ BREAKING CHANGES
